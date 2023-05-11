@@ -1,0 +1,31 @@
+// place your custom styles here
+//======================================
+//===========添加自定义样式==============
+//======================================
+
+// .site-name{
+//     font-style: italic;
+// }
+
+//F12查看网页，基本所有的class里的类，都可以在这里重新指定样式
+// .toggle-sidebar-wrapper{
+//     //将
+// }
+h4{
+    font-size:1.2rem;
+    font-weight:600;
+}
+h2{
+    font-weight:600;
+    color: #560745;
+}
+
+//隐藏主页下面的跟人信息部分
+.blog-page-wrapper{
+    display:none;
+}
+
+//隐藏阤大图的下滑按钮
+.blog-hero.fullscreen .slide-down-button{
+    display:none;
+}
