@@ -3,7 +3,7 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro"
 
 export default defineUserConfig({
-  base: "/doc/", //必须指定
+  base: "/doc/", //必须指定，除非放在根目录下
   lang: "zh-CN",
   title: "本站点的标题", //待修改站点信息
   description: "本站点的描述信息", //待修改站点信息

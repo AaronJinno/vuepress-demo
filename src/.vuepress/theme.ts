@@ -4,10 +4,10 @@ import { zhSidebar } from "./sidebar/sidebar.js";
 
 export default hopeTheme({
   //1.基本配置
-  hostname: "http://aiface.hsshcn.com",
+  hostname: "https://cybercell.cc/",
   author: {
-    name: "红杉生活",
-    url: "http://aiface.hsshcn.com",
+    name: "Victor Da V",
+    url: "https://cybercell.cc/about",
   },
 
   //2.外观配置
