@@ -3,7 +3,9 @@ import { sidebar } from "vuepress-theme-hope";
 export const zhSidebar = sidebar({
   //推荐：使用structure将指定导航下所有的文件加入侧边栏
   "/guide/": "structure",
-  "/second/": "structure",
+
+  //可以给次级目录单独设置自动侧边栏
+  "/second/s1/": "structure",
 
   //数组格式：自定义侧边栏导航的目录
   "/third":[
