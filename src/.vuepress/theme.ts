@@ -242,11 +242,8 @@ export default hopeTheme({
     // comment: { //评论配置：配置很复杂，不需要就别配置
     //   provider: "Twikoo", //选择引擎
     // },
-
     //photoSwipe:false,// photoSwipe图片浏览功能
-
     //seo:false, //SEO, 默认不需要配置
-
     //sitemap:false, //默认不需要任何配置
   },
 });
