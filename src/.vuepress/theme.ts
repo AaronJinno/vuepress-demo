@@ -18,10 +18,9 @@ export default hopeTheme({
   // 设置icon资源
   iconAssets:[
     //job
-    "https://at.alicdn.com/t/c/font_4059879_im0k048s4ff.css?spm=a313x.7781069.1998910419.52&file=font_4059879_im0k048s4ff.css"
+    "/base/iconfont/xxx/iconfont.css"
 
   ],
-
 
   //3.布局配置
   logo: "/logo.svg",
@@ -36,8 +35,9 @@ export default hopeTheme({
   headerDepth: 1,
   pageInfo:[
     "Date"
+    //"Author","Date","Category","Tag","Word"
   ],
-  lastUpdated: false,
+  lastUpdated: false, //上次更新时间
   contributors: false,
   editLink: false,
   // footer: "Victor Da V",
@@ -60,10 +60,10 @@ export default hopeTheme({
   encrypt: {
     config: {
       // 开启全局密码后，这里就不生效了。
-      "/aiface/console/":["ai@2023"]
+      "/aiface/console/":["2021"]
     },
     global:true,
-    admin:["ai1901"]
+    admin:["2020"]
   },
   // blog:{
     // avatar:"/avatar.jpg",
@@ -84,13 +84,18 @@ export default hopeTheme({
 
   //6.插件配置
   plugins: {
-    prismjs:{
+    prismjs:{ //代码主题插件
       light:"one-dark",
       dark:"one-dark",
     },
     blog: {
       excerptLength:0,
       filter:(page)=>Boolean(page.filePathRelative) && !page.frontmatter.home && Boolean(page.frontmatter.article)
+    },
+    components:{
+      components:[
+        //配置激活的内置组件
+      ]
     },
     copyCode: {},
     nprogress: true,
@@ -139,13 +144,17 @@ export default hopeTheme({
       vuePlayground: true,
     },
 
+    // 缓存设置
     pwa: {
       favicon: "/favicon.ico",
-      cacheHTML: true, //缓存所有HTML页面
-      cachePic: true, //缓存站点图片
+      //缓存所有HTML页面，体积小或者要离线使用就设置为true。
+      // cacheHTML: true, 
+      cachePic: true, // 缓存站点图片
       appendBase: true,
-      maxSize:2000,
-      maxPicSize:3000,
+      maxSize:2000,//缓存的最大文件大小
+      maxPicSize:3000, //换成图片的大小限制
+      //更新控制：开发时设置为hint，维护时设置为available
+      update:"hint"
     },
   },
 });

@@ -3,10 +3,11 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro"
 
 export default defineUserConfig({
-  base: "/doc/", //必须指定，除非放在根目录下
+  base: "/doc/", //必须指定，文档所在目录，除非放在根目录下
   lang: "zh-CN",
   title: "本站点的标题", //待修改站点信息
   description: "本站点的描述信息", //待修改站点信息
+  debug: false, //是否启用 Debug 模式,开发时可以开启
 
   dest:"doc", //默认是dest，可以改为doc和base设置成一样的
   theme, //引入主题配置文件
